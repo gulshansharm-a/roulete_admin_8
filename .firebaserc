@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "roulette-83221": {
+      "hosting": {
+        "admin": [
+          "roulette-83221"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "roulette-83221"
+  }
+}
