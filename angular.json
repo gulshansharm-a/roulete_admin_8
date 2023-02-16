@@ -104,8 +104,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "admin:build:production",
-            "firebaseProject": "roulette-83221",
-            "firebaseHostingSite": "roulette-83221"
+            "firebaseProject": "roulette-aee9f",
+            "firebaseHostingSite": "roulette-aee9f"
           }
         }
       }

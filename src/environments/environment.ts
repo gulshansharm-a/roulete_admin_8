@@ -1,12 +1,13 @@
 export const environment = {
-     firebase : {
-        apiKey: "AIzaSyCT1V2LTN8f-l1Pe387uooI_rYrYOSIphY",
-        authDomain: "roulette-cfe24.firebaseapp.com",
-        databaseURL: "https://roulette-cfe24-default-rtdb.firebaseio.com",
-        projectId: "roulette-cfe24",
-        storageBucket: "roulette-cfe24.appspot.com",
-        messagingSenderId: "542773397020",
-        appId: "1:542773397020:web:ef1b2ac5f0398b527481d9",
-        measurementId: "G-6VLHZJV6T3"
-      }
+  firebase: {
+    projectId: 'roulette-aee9f',
+    appId: '1:775812481325:web:8757049359bb3c8c50d3a4',
+    databaseURL: 'https://roulette-aee9f-default-rtdb.firebaseio.com',
+    storageBucket: 'roulette-aee9f.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyA-9D9bV5DqGb_Md5brSkFRS7ld58WMBtw',
+    authDomain: 'roulette-aee9f.firebaseapp.com',
+    messagingSenderId: '775812481325',
+    measurementId: 'G-2HMVSPP986',
+  },
 };

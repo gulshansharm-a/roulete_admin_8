@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent {
-
+moveto() {
+  
+}
 }

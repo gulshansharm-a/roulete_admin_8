@@ -1,11 +1,12 @@
 export const environment = {
   firebase: {
-    projectId: 'roulette-83221',
-    appId: '1:267286306625:web:185eb2d18d91aad247cbc0',
-    databaseURL: 'https://roulette-83221-default-rtdb.firebaseio.com',
-    storageBucket: 'roulette-83221.appspot.com',
-    apiKey: 'AIzaSyC8LIH4_-ZXRCrSCVtuX6mnkqt_zSqHptM',
-    authDomain: 'roulette-83221.firebaseapp.com',
-    messagingSenderId: '267286306625',
-    measurementId: 'G-XQ7FXECYYC',
+    projectId: 'roulette-aee9f',
+    appId: '1:775812481325:web:8757049359bb3c8c50d3a4',
+    databaseURL: 'https://roulette-aee9f-default-rtdb.firebaseio.com',
+    storageBucket: 'roulette-aee9f.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyA-9D9bV5DqGb_Md5brSkFRS7ld58WMBtw',
+    authDomain: 'roulette-aee9f.firebaseapp.com',
+    messagingSenderId: '775812481325',
+    measurementId: 'G-2HMVSPP986',
   },};
