@@ -18,17 +18,23 @@ import { AgentComponent } from './agent/agent.component';
 import { MembersInGameComponent } from './members-in-game/members-in-game.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { EditdisComponent } from './editdis/editdis.component';
+import { AddagentComponent } from './addagent/addagent.component';
 
 
 const appRouts :Routes=[
 {path:'games',component:GamesComponent},
 {path:'login',component:LoginComponent},
 {path:'add',component:AddplayerComponent},
+{path:'addagent',component:AddagentComponent},
 {path:'last-matches/:id',component:LastWinsComponent},
 {path:'agent',component:AgentComponent},
 {path:'members',component:AgentComponent},
 {path:'',component:HomeComponent},
-{path:'',component:AgentListComponent}
+{path:'',component:AgentListComponent},
+{path:'dis/:id',component:EditdisComponent},
+// {path:'dis/:id/agent/:agentid',component:EditdisComponent},
+// {path:'dis/:id/agent/:agentid/player/:playerid',component:EditdisComponent},
 ]
 
 
@@ -45,6 +51,8 @@ const appRouts :Routes=[
     MembersInGameComponent,
     AgentListComponent,
     UserListComponent,
+    EditdisComponent,
+    AddagentComponent,
   
   ],
   imports: [

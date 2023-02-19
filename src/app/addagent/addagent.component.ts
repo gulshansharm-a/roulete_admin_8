@@ -6,12 +6,14 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
 import{Database} from '@angular/fire/database'
 import { NgForm } from '@angular/forms';
 import {Router} from "@angular/router"
+
+
 @Component({
-  selector: 'app-addplayer',
-  templateUrl: './addplayer.component.html',
-  styleUrls: ['./addplayer.component.css']
+  selector: 'app-addagent',
+  templateUrl: './addagent.component.html',
+  styleUrls: ['./addagent.component.css']
 })
-export class AddplayerComponent {
+export class AddagentComponent {
   constructor(public db: AngularFireDatabase,public router: Router) {
     db.list('admin').valueChanges().forEach(data=>{
       console.log(data)
