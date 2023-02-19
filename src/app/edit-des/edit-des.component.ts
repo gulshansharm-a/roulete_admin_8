@@ -3,7 +3,7 @@ import { AngularFireAction, AngularFireDatabase } from '@angular/fire/compat/dat
 import { Database } from '@angular/fire/database';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Route, Router } from '@angular/router';
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, update } from "firebase/database";
 
 @Component({
   selector: 'app-edit-des',
@@ -11,21 +11,21 @@ import { getDatabase, ref, set } from "firebase/database";
   styleUrls: ['./edit-des.component.css']
 })
 export class EditDesComponent {
-  id:string = '';
+  id_url:string = '';
   array:any[]=[];
 constructor(public rout:ActivatedRoute,public db:AngularFireDatabase,public router:Router) {
-  this.id = rout.snapshot.params['id'];
-
-  console.log(this.id);
-  this.db.list("admin/"+this.id).valueChanges().subscribe(s=>{
+  this.id_url = rout.snapshot.params['id'];
+  console.log(this.id_url);
+  this.db.list("admin/"+this.id_url).valueChanges().subscribe(s=>{
     console.log(s)
     this.array = s;
     console.log(this.array)
   })
 }
+addDes(value:NgForm['value']) {
 
-addDes(value:NgForm) {
-  set(ref(getDatabase(), 'admin/'+this.id ), value);
-  this.router.navigate(['/'])
+  value['id'] = this.id_url
+  const fRef =ref(getDatabase(), 'admin/'+this.id_url );
+  set(fRef, value);
  }
 }

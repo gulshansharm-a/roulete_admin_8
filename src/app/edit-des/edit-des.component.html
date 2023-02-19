@@ -19,7 +19,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label" for="requestid">Username</label>
 								<div class="col-sm-6">
-									<input ngModel id="username" name="username" placeholder="Username" value="{{array[4]}}"
+									<input ngModel id="username" name="username" placeholder="{{array[4]}}" ng-value="array[4]"
 										class="form-control input-md" required="" type="text">
 
 								</div>
@@ -27,15 +27,15 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label" for="requestid">Password</label>
 								<div class="col-sm-6">
-									<input ngModel id="password" name="password" placeholder="Password"
-										class="form-control input-md" required="" value="{{array[3]}}" type="text">
+									<input ngModel id="password" name="password" placeholder="{{array[3]}}"
+										class="form-control input-md" required="" ng-value="array[3]" type="password">
 								</div>
 							</div>
 							<div class="form-group">
 								<label class="col-sm-3 control-label" for="requestid">Name</label>
 								<div class="col-sm-6">
-									<input ngModel id="name" name="name" placeholder="Name" 
-										class="form-control input-md" value="{{array[2]}}" required="" type="text">
+									<input ngModel id="name" name="name" placeholder="{{array[2]}}" 
+										class="form-control input-md" ng-value="array[2]" required="" type="text">
                                         <!-- <input type="hidden"> -->
 
 								</div>
@@ -43,8 +43,10 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label" for="requestid">Email</label>
 								<div class="col-sm-6">
-									<input ngModel id="email" name="email" placeholder="Email" value="{{array[0]}}"
-										class="form-control input-md" type="text">
+									<input ngModel id="email" name="email" placeholder="{{array[0]}}" ng-value="array[0]"
+										class="form-control input-md" type="email">
+										<input ngModel id="id" name="id"  ng-value="array[0]"
+										type="hidden">
 
 								</div>
 							</div>
