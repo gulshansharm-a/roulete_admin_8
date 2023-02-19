@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./agent-list.component.css']
 })
 export class AgentListComponent {
+  des_arr = [];
+    constructor() {
 
+    }
 }

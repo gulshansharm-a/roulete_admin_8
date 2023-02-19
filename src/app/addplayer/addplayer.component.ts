@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AngularFireModule } from '@angular/fire/compat';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { merge, Observable } from 'rxjs';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import{Database} from '@angular/fire/database'
 import { NgForm } from '@angular/forms';
@@ -19,7 +19,12 @@ export class AddplayerComponent {
    }
 
    addDes(value:NgForm['value']) {
-    this.db.list('admin').push(value);
+    this.db.list('admin').push(value).then(
+      snap=>{
+        const s = snap.key;
+        snap.update({id:s});
+      }
+    );
     this.router.navigate(['/'])
    }
 }
