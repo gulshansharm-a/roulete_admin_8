@@ -18,7 +18,7 @@ export class AddplayerComponent {
     })   
    }
    addDes(value:NgForm['value']) {
-    this.db.list('admin' + this).push(value).then(
+    this.db.list('admin').push(value).then(
       snap=>{
         const s = snap.key;
         snap.update({id:s});

@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import{Database} from '@angular/fire/database'
 import { NgForm } from '@angular/forms';
-import {Router} from "@angular/router"
+import {ActivatedRoute, Router} from "@angular/router"
 
 
 @Component({
@@ -14,7 +14,9 @@ import {Router} from "@angular/router"
   styleUrls: ['./addagent.component.css']
 })
 export class AddagentComponent {
-  constructor(public db: AngularFireDatabase,public router: Router) {
+  disId:string='';
+  constructor(public db: AngularFireDatabase,public router: Router,public ar :ActivatedRoute) {
+    this.disId=ar.snapshot.params['disId']
     db.list('admin').valueChanges().forEach(data=>{
       console.log(data)
     })   

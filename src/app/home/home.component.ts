@@ -30,4 +30,9 @@ export class HomeComponent {
    addDes(value:NgForm['value']) {
     this.db.list(value.sadf)
    }
+   delete(id:string) {
+    console.log("alkjsd")
+    this.db.list('admin/'+id).remove();
+    console.log("asldjklf")
+   }
 }

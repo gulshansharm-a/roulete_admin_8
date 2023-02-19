@@ -28,4 +28,5 @@ addDes(value:NgForm['value']) {
   const fRef =ref(getDatabase(), 'admin/'+this.id_url );
   set(fRef, value);
  }
+ 
 }

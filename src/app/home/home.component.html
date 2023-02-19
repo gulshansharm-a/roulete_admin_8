@@ -149,14 +149,13 @@
 																<a href="dis/{{user['id']}}" class="btn btn-info
 																	btn-sm">Edit</a>
 																
-																<a href="agent" class="btn
+																<a href="dis/{{user['id']}}/agent" class="btn
 																	btn-default btn-sm" title="Agent"><i class="fa
 																		fa-history"></i></a>
 	
-																<a href="" class="btn
-																	btn-success btn-sm" title="Ban User"><i class="fa fa-ban"></i></a>
+																<a href="javascript:" class="btn
+																	btn-success btn-sm" title="Ban User"><i (click)="delete(user['id'])" class="fa fa-ban"></i></a>
 															</div>
-	
 														</td>
 													</tr></tbody>
 											</table></div></div><div class="row"><div class="col-sm-5"><div

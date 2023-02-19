@@ -27,10 +27,9 @@ const appRouts :Routes=[
 {path:'games',component:GamesComponent},
 {path:'login',component:LoginComponent},
 {path:'add',component:AddplayerComponent},
-{path:'addagent',component:AddagentComponent},
+{path:'dis/:disId/addagent',component:AddagentComponent},
 {path:'last-matches/:id',component:LastWinsComponent},
-{path:'dis/:id',component:EditDesComponent},
-{path:'agent',component:AgentComponent},
+{path:'dis/:disId/agent',component:AgentComponent},
 {path:'members',component:AgentComponent},
 {path:'',component:HomeComponent},
 {path:'',component:AgentListComponent},
@@ -56,9 +55,6 @@ const appRouts :Routes=[
 
     EditdisComponent,
     AddagentComponent,
-=======
-    EditDesComponent,
-  
   ],
   imports: [
     BrowserModule,
