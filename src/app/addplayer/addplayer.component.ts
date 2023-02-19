@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AngularFireModule } from '@angular/fire/compat';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { merge, Observable } from 'rxjs';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import{Database} from '@angular/fire/database'
 import { NgForm } from '@angular/forms';

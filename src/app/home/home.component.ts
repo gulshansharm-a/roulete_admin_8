@@ -24,8 +24,8 @@ export class HomeComponent {
     })
    }
    ngOnInit() {
-console.log(this.des_arr,"uhu")
-  }
+      console.log(this.des_arr,"uhu")
+   }
 
    addDes(value:NgForm['value']) {
     this.db.list(value.sadf)
