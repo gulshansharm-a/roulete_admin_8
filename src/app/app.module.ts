@@ -16,6 +16,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import {AngularFireModule} from '@angular/fire/compat';
 import { AgentComponent } from './agent/agent.component';
 import { MembersInGameComponent } from './members-in-game/members-in-game.component';
+import { AgentListComponent } from './agent-list/agent-list.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 const appRouts :Routes=[
@@ -25,8 +27,10 @@ const appRouts :Routes=[
 {path:'last-matches/:id',component:LastWinsComponent},
 {path:'agent',component:AgentComponent},
 {path:'members',component:AgentComponent},
-{path:'',component:HomeComponent}
+{path:'',component:HomeComponent},
+{path:'',component:AgentListComponent}
 ]
+
 
 @NgModule({
   declarations: [
@@ -39,6 +43,8 @@ const appRouts :Routes=[
     LastWinsComponent,
     AgentComponent,
     MembersInGameComponent,
+    AgentListComponent,
+    UserListComponent,
   
   ],
   imports: [
