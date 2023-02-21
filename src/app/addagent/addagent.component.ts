@@ -23,7 +23,7 @@ export class AddagentComponent {
    }
    addDes(value:NgForm['value']) {
     this.db.list('admin' + this).push(value).then(
-      snap=>{
+      snap=>{ 
         const s = snap.key;
         snap.update({id:s});
       }
