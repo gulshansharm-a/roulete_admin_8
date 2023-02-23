@@ -21,6 +21,7 @@ import { UserListComponent } from './user-list/user-list.component';
 
 import { EditdisComponent } from './editdis/editdis.component';
 import { AddagentComponent } from './addagent/addagent.component';
+import { ShowSubDisComponent } from './show-sub-dis/show-sub-dis.component';
 
 
 const appRouts :Routes=[
@@ -34,6 +35,7 @@ const appRouts :Routes=[
 {path:'',component:HomeComponent},
 {path:'',component:AgentListComponent},
 {path:'dis/:id',component:EditdisComponent},
+{path:'dis/:disId/sub-dis',component:ShowSubDisComponent},
 // {path:'dis/:id/agent/:agentid',component:EditdisComponent},
 // {path:'dis/:id/agent/:agentid/player/:playerid',component:EditdisComponent},
 ]
@@ -55,6 +57,7 @@ const appRouts :Routes=[
 
     EditdisComponent,
     AddagentComponent,
+    ShowSubDisComponent,
   ],
   imports: [
     BrowserModule,

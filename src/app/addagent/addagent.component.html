@@ -10,7 +10,7 @@
 
 					</div>
 					<div class="panel-body">
-						<form #simpleForm="ngForm"  class="form-horizontal" method="post">
+						<form #simpleForm="ngForm" (ngSubmit)="addAgent(simpleForm.value)"  class="form-horizontal" method="post">
 							<input type="hidden" name="_token"
 								value="u0aTDOnhe02o3DqxIQIxxokn3pntdHbJVTpEJT29">
 							<div class="form-group">

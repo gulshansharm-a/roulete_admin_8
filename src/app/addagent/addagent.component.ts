@@ -21,13 +21,13 @@ export class AddagentComponent {
       console.log(data)
     })   
    }
-   addDes(value:NgForm['value']) {
-    this.db.list('admin' + this).push(value).then(
+   addAgent(value:NgForm['value']) {
+    this.db.list('admin/' + this.disId+"/agent").push(value).then(
       snap=>{ 
         const s = snap.key;
         snap.update({id:s});
       }
     );
     this.router.navigate(['/'])
-   }
+  }
 }
